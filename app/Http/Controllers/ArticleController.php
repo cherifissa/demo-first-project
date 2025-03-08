@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-    // creer un article, voir la liste des articles, voir un article, modifier un article, supprimer un article
     public function index(){
         $articles = Article::all();
         return view('articles', compact('articles'));
